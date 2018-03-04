@@ -17,12 +17,12 @@ using UnityEditor;
 /// Tell the RangeDrawer that it is a drawer for properties with the RangeAttribute.
 /// </summary>
 [CustomPropertyDrawer(typeof(RangeAttribute))]
-public class CustomRangeDrawer : PropertyDrawer
+public class CustomRangeTestDrawer : PropertyDrawer
 {
     /// <summary>
     /// Draw the property inside the given rect
     /// </summary>
-    public override void OnGUI (Rect position, SerializedProperty property, GUIContent label) 
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) 
     {
         // first get the attribute since it contains the range for the slider
         var range = this.attribute as RangeAttribute;

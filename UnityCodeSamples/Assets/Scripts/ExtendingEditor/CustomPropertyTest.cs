@@ -9,39 +9,37 @@
 ------------------------------------------------------------------------------------------------------------------------
  */
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Drap on Inspector.
+/// Drop to Inspector.
 /// </summary>
-public class IngredientDisplay : MonoBehaviour
+public class CustomPropertyTest : MonoBehaviour
 {
-    public Ingredient   potionResult;
-    public Ingredient[] potionIngredients;
+    public CustomThing   oneThing;
+    public CustomThing[] manyThing;
 
 
 //----------------------------------------------------------------------------------------------------------------------
 
 
-    public enum IngredientUnit 
+    public enum Group 
     { 
-        Spoon,
-        Cup,
-        Bowl, 
-        Piece,
+        One,
+        Two,
+        Three, 
+        Four,
     }
 
 
     /// <summary>
-    /// Custom serializable class by IngredientDrawer.
+    /// Custom serializable class, drawn by MyCustomPropertyDrawer.
     /// </summary>
     [System.Serializable]
-    public class Ingredient
+    public class CustomThing
     {
-        public string         name;
-        public int            amount;
-        public IngredientUnit unit;
+        public string name;
+        public int    amount;
+        public Group  group;
     }
 }

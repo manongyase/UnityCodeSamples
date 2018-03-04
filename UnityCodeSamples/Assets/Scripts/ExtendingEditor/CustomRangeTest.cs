@@ -12,9 +12,9 @@
 using UnityEngine;
 
 /// <summary>
-/// Drop on Inspector.
+/// Drop to Inspector.
 /// </summary>
-public class CustomRange : MonoBehaviour 
+public class CustomRangeTest : MonoBehaviour 
 {
     [Range(0.0f, 10.0f)]
     public float num;

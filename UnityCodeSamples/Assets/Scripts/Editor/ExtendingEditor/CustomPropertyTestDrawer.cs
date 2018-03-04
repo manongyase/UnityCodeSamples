@@ -12,8 +12,8 @@
 using UnityEngine;
 using UnityEditor;
 
-[CustomPropertyDrawer(typeof(IngredientDisplay.Ingredient))]
-public class IngredientDrawer : PropertyDrawer
+[CustomPropertyDrawer(typeof(CustomPropertyTest.CustomThing))]
+public class CustomPropertyTestDrawer : PropertyDrawer
 {
     /// <summary>
     /// Draw the property inside the given rect
@@ -39,7 +39,7 @@ public class IngredientDrawer : PropertyDrawer
 
         // draw fields - passs GUIContent.none to each so they are drawn without labels
         EditorGUI.PropertyField(amountRect, property.FindPropertyRelative("amount"), GUIContent.none);
-        EditorGUI.PropertyField(unitRect,   property.FindPropertyRelative("unit"),   GUIContent.none);
+        EditorGUI.PropertyField(unitRect,   property.FindPropertyRelative("group"),  GUIContent.none);
         EditorGUI.PropertyField(nameRect,   property.FindPropertyRelative("name"),   GUIContent.none);
 
         // set indent back to what it was
