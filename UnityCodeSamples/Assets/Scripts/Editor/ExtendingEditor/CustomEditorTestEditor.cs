@@ -106,7 +106,7 @@ public class CustomEditorTestEditor : Editor
 
         EditorGUILayout.BeginHorizontal(GUI.skin.box);
 
-        EditorGUILayout.LabelField("This is BeginHorizontal",GUILayout.MaxWidth(150.0f));
+        EditorGUILayout.LabelField("This is BeginHorizontal", GUILayout.MaxWidth(150.0f));
         EditorGUILayout.DelayedDoubleField(11.1f);
         EditorGUILayout.DelayedTextField("DelayedTextField");
         EditorGUILayout.DropdownButton(GUIContent.none, FocusType.Passive);
