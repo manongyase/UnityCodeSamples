@@ -126,10 +126,10 @@ public class CustomEditorTestEditor : Editor
         EditorGUILayout.EnumFlagsField("EnumFlagsField", this.types);
         EditorGUILayout.EnumPopup("EnumPopup", this.types);
 
-        this.selectOption = EditorGUILayout.IntPopup("IntPopup",   (int) this.selectOption, new string[] {"0", "1", "2"}, new int[] {0, 1, 2});
+        this.selectOption = EditorGUILayout.IntPopup ("IntPopup",  (int) this.selectOption, new[] {"0", "1", "2"}, new[] {0, 1, 2});
         this.selectOption = EditorGUILayout.IntSlider("IntSlider", (int) this.selectOption, 0, 2);
-        this.selectOption = EditorGUILayout.MaskField("MaskField", (int) this.selectOption, new string[] {"mask1", "mask2", "mask3"});
-        this.selectOption = EditorGUILayout.Popup("Popup", (int) this.selectOption, new string[] {"s1", "s2", "s3"});
+        this.selectOption = EditorGUILayout.MaskField("MaskField", (int) this.selectOption, new[] {"mask1", "mask2", "mask3"});
+        this.selectOption = EditorGUILayout.Popup    ("Popup",     (int) this.selectOption, new[] {"s1", "s2", "s3"});
        
         EditorGUILayout.EndVertical();
 
